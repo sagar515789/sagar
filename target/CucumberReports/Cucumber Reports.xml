@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="35.722" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="search functionality" name="User search for valid product" time="15.393">
+<system-out><![CDATA[
+Given User enters the url of application....................................passed
+When User enters the "HP" into search textfield.............................passed
+And User clicks on search icon for next.....................................passed
+Then User should get displayed on search results page.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="search functionality" name="User search for invalid product" time="9.827">
+<system-out><![CDATA[
+Given User enters the url of application....................................passed
+When User enters the "honda" into search textfield for inavlid product......passed
+And User clicks on search icon for next step................................passed
+Then User should get displayed proper error message for inalid product......passed
+]]></system-out>
+</testcase>
+<testcase classname="search functionality" name="User searchs without any product" time="9.489">
+<system-out><![CDATA[
+Given User enters the url of application....................................passed
+When User  does not enter the  into search textfield........................passed
+And User clicks on search icon for execution................................passed
+Then User should get displayed proper error message for empty search textfield.passed
+]]></system-out>
+</testcase>
+</testsuite>
